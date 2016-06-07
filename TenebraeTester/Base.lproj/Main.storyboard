@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G7a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TenebraeTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Y3-3O-Uj1">
+                                <rect key="frame" x="180" y="78" width="240" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Zen-qa-t1a"/>
+                                    <constraint firstAttribute="width" constant="240" id="wlR-gc-Ggc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-Gx-q15">
+                                <rect key="frame" x="285" y="40" width="30" height="30"/>
+                                <state key="normal" title="Top"/>
+                                <connections>
+                                    <action selector="toggleShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jX3-fn-Mm7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PB2-pd-730">
+                                <rect key="frame" x="275" y="206" width="51" height="30"/>
+                                <state key="normal" title="Bottom"/>
+                                <connections>
+                                    <action selector="toggleShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXx-ju-rfx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-4I-9MM">
+                                <rect key="frame" x="428" y="123" width="36" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="toggleShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCD-7y-XO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tc-YX-eVL">
+                                <rect key="frame" x="142" y="123" width="30" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="toggleShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hpd-rB-21o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Y3-3O-Uj1" firstAttribute="leading" secondItem="0tc-YX-eVL" secondAttribute="trailing" constant="8" id="6so-rR-8FM"/>
+                            <constraint firstItem="PB2-pd-730" firstAttribute="top" secondItem="5Y3-3O-Uj1" secondAttribute="bottom" constant="8" id="CdT-3q-tNC"/>
+                            <constraint firstItem="5Y3-3O-Uj1" firstAttribute="centerX" secondItem="PB2-pd-730" secondAttribute="centerX" id="Dju-fB-V6K"/>
+                            <constraint firstItem="yKT-Gx-q15" firstAttribute="centerX" secondItem="5Y3-3O-Uj1" secondAttribute="centerX" id="SSg-LH-ISm"/>
+                            <constraint firstItem="5Y3-3O-Uj1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="XM5-6x-zjs"/>
+                            <constraint firstItem="5Y3-3O-Uj1" firstAttribute="top" secondItem="yKT-Gx-q15" secondAttribute="bottom" constant="8" id="dkj-rW-nYA"/>
+                            <constraint firstItem="ovA-4I-9MM" firstAttribute="leading" secondItem="5Y3-3O-Uj1" secondAttribute="trailing" constant="8" id="fHY-48-jLu"/>
+                            <constraint firstItem="0tc-YX-eVL" firstAttribute="centerY" secondItem="5Y3-3O-Uj1" secondAttribute="centerY" id="jbT-zR-r7m"/>
+                            <constraint firstItem="ovA-4I-9MM" firstAttribute="centerY" secondItem="5Y3-3O-Uj1" secondAttribute="centerY" id="m6o-Op-kdh"/>
+                            <constraint firstItem="5Y3-3O-Uj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oo4-a5-d0V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="PB2-pd-730" id="zHR-PQ-WLu"/>
+                        <outlet property="leftButton" destination="0tc-YX-eVL" id="mqD-LD-4Eu"/>
+                        <outlet property="rightButton" destination="ovA-4I-9MM" id="KdI-Pi-PhU"/>
+                        <outlet property="targetView" destination="5Y3-3O-Uj1" id="4TZ-jV-V7j"/>
+                        <outlet property="topButton" destination="yKT-Gx-q15" id="bTG-U2-PcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="350"/>
+        </scene>
+    </scenes>
+</document>
